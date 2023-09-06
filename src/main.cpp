@@ -11,5 +11,5 @@ void loop()
 {
   // put your main code here, to run repeatedly:
   ultrasonic(1, 3);
-  encoderSensor(4);
+  // encoderSensor(4);
 }

@@ -1,24 +1,21 @@
 #include <Arduino.h>
-int encoderSensor(int PHOTOTRANSISTOR_PIN)
+
+int encoderSensor(int PHOTOTRANSISTOR_PIN, int *counter, int desiredAngle)
 {
     pinMode(PHOTOTRANSISTOR_PIN, INPUT);
 
     int sensorValue = digitalRead(PHOTOTRANSISTOR_PIN); // Read the sensor value
     int prevSensorValue;                                // Variable to store the previous sensor value
-
+    /* Turn motor function */
     // Check if the sensor value has changed
     if (sensorValue != prevSensorValue)
     {
-        if (sensorValue == LOW)
+        counter++;
+        int stop_count = (20 * desiredAngle) / 360;
+        if (*counter == stop_count)
         {
-            Serial.println("Encoder slot detected!"); // A slot on the encoder disk is detected
+            // turn motor off
         }
-        else
-        {
-            Serial.println("Encoder slot blocked!"); // The slot is blocked or not detected
-        }
-        prevSensorValue = sensorValue; // Update the previous sensor value
-        return 0;
     }
     // pinMode(2, OUTPUT);
     // digitalWrite(2, HIGH);
