@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-#define IN1  4
+#define IN1 4
 #define IN2 32
 #define IN3 18
 #define IN4 19
@@ -15,52 +15,51 @@ void directionInit(void)
   pinMode(IN4, OUTPUT);
   pinMode(En1, OUTPUT);
   pinMode(En2, OUTPUT);
-
 }
 
-void backward(void)
+void move_backward(void)
 {
- analogWrite(IN1, 255);
- analogWrite(IN2, 0);
- analogWrite(IN3, 255);
- analogWrite(IN4, 0);
+  analogWrite(IN1, 255);
+  analogWrite(IN2, 0);
+  analogWrite(IN3, 255);
+  analogWrite(IN4, 0);
 }
 
-void forward(void)
+void move_forward(void)
 {
- analogWrite(IN1, 0);
- analogWrite(IN2, 170);
- analogWrite(IN3, 0);
- analogWrite(IN4, 170);
+  analogWrite(IN1, 0);
+  analogWrite(IN2, 170);
+  analogWrite(IN3, 0);
+  analogWrite(IN4, 170);
 }
 
-void right(void)
+void move_right(void)
 {
- analogWrite(IN1, 255);
- analogWrite(IN2, 0);
- analogWrite(IN3, 0);
- analogWrite(IN4, 255);
+  analogWrite(IN1, 255);
+  analogWrite(IN2, 0);
+  analogWrite(IN3, 0);
+  analogWrite(IN4, 255);
 }
-void left(void)
+void move_left(void)
 {
- analogWrite(IN1, 0);
- analogWrite(IN2, 255);
- analogWrite(IN3, 255);
- analogWrite(IN4, 0);
+  analogWrite(IN1, 0);
+  analogWrite(IN2, 255);
+  analogWrite(IN3, 255);
+  analogWrite(IN4, 0);
 }
 
 void stop(void)
 {
- analogWrite(IN1, 0);
- analogWrite(IN2, 0);
- analogWrite(IN3, 0);
- analogWrite(IN4, 0);
+  analogWrite(IN1, 0);
+  analogWrite(IN2, 0);
+  analogWrite(IN3, 0);
+  analogWrite(IN4, 0);
 }
 void rotate180(void)
 {
- analogWrite(IN1, 255);
- analogWrite(IN2, 0);
- analogWrite(IN3, 0);
- analogWrite(IN4, 255);
- delay(250);
+  analogWrite(IN1, 255);
+  analogWrite(IN2, 0);
+  analogWrite(IN3, 0);
+  analogWrite(IN4, 255);
+  delay(250);
 }

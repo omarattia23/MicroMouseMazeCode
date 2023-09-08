@@ -10,6 +10,8 @@
             "includePath": [
                 "D:/Micromouse Maze Competions/Code/micromousemazeCode/include",
                 "D:/Micromouse Maze Competions/Code/micromousemazeCode/src",
+                "D:/Micromouse Maze Competions/Code/micromousemazeCode/.pio/libdeps/upesy_wroom/MPU6050/src",
+                "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                 "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                 "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -232,7 +234,6 @@
                 "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
-                "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                 ""
             ],
             "browse": {
@@ -240,6 +241,8 @@
                 "path": [
                     "D:/Micromouse Maze Competions/Code/micromousemazeCode/include",
                     "D:/Micromouse Maze Competions/Code/micromousemazeCode/src",
+                    "D:/Micromouse Maze Competions/Code/micromousemazeCode/.pio/libdeps/upesy_wroom/MPU6050/src",
+                    "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                     "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                     "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -462,7 +465,6 @@
                     "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
-                    "C:/Users/omara/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                     ""
                 ]
             },

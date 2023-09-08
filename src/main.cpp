@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "ultraSonic_interface.h"
 #include "encoder_interface.h"
+#include "direction_interface.h"
 
 void setup()
 {
@@ -10,6 +11,5 @@ void setup()
 void loop()
 {
   // put your main code here, to run repeatedly:
-  ultrasonic(1, 3);
-  // encoderSensor(4);
+  
 }
